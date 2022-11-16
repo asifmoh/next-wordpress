@@ -53,15 +53,7 @@ export default function Footer() {
     <div className="footer-socket-wrapper clearfix">
       <div className="inner-wrap">
         <div className="footer-socket-area">
-          <div className="footer-socket-right-section">
-            <div className="social-links">
-              <ul>
-                <li><a href="https://www.facebook.com/shongshoydotcom" target="_blank"><i className="fa fa-facebook" /></a></li>
-                <li><a href="https://twitter.com/iamasifm" target="_blank"><i className="fa fa-twitter" /></a></li>
-                <li><a href="https://www.youtube.com/channel/UCAutFggTjBZJdOnHfGA9nQQ" target="_blank"><i className="fa fa-youtube" /></a></li>
-              </ul>
-            </div>
-          </div>
+          
           <div className="footer-socket-left-section">
             <div className="copyright">Copyright © 2022 <a href="https://www.shongshoy.com/" title="সংশয় – চিন্তার মুক্তির আন্দোলন"><span>সংশয় – চিন্তার মুক্তির আন্দোলন</span></a>. All rights reserved.</div>
           </div>

@@ -5,7 +5,7 @@ import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
-
+import Rightsidebar from '../components/rightsidebar'
 
 export default function Index({ allPosts: { edges }, preview }) {
   const heroPost = edges[0]?.node
@@ -18,6 +18,12 @@ export default function Index({ allPosts: { edges }, preview }) {
       </Head>
       <Container>
        
+      <div className="main-content-section clearfix">
+                                                        <div id="primary">
+                                                        <div id="content" className="clearfix">
+
+                                                      
+        
         {heroPost && (
           <HeroPost
             title={heroPost.title}
@@ -29,6 +35,10 @@ export default function Index({ allPosts: { edges }, preview }) {
           />
         )}
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+
+
+</div></div>  <Rightsidebar /></div>
+
       </Container>
     </Layout>
   )

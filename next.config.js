@@ -16,6 +16,7 @@ module.exports = {
       'secure.gravatar.com',
       'i0.wp.com',
       'www.shongshoy.com',
+      'cdnjs.cloudflare.com',
     ],
   },
 }

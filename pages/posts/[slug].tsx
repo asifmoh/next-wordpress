@@ -5,7 +5,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
 import MoreStories from '../../components/more-stories'
-
+import Rightsidebar from '../../components/rightsidebar'
 import PostHeader from '../../components/post-header'
 import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/layout'
@@ -30,6 +30,12 @@ export default function Post({ post, posts, preview }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
+
+<div className="main-content-section clearfix">
+                                                        <div id="primary">
+                                                        <div id="content" className="clearfix">
+
+
             <article>
               <Head>
                 <title>
@@ -52,6 +58,8 @@ export default function Post({ post, posts, preview }) {
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
               </footer>
             </article>
+
+            </div></div>  <Rightsidebar /></div>
 
             <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}

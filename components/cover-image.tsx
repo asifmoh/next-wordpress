@@ -14,6 +14,7 @@ interface Props {
 
 export default function CoverImage({ title, coverImage, slug }: Props) {
   const image = (
+    <div style={{ borderRadius: '10px', overflow: 'hidden' }}>
     <Image
       width={2000}
       height={1000}
@@ -23,9 +24,10 @@ export default function CoverImage({ title, coverImage, slug }: Props) {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
     />
+    </div>
   )
   return (
-    <div className="sm:mx-0">
+    <div>
       {slug ? (
         <Link href={`/posts/${slug}`} aria-label={title}>
           {image}

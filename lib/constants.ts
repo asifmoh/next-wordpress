@@ -1,4 +1,4 @@
-export const EXAMPLE_PATH = 'cms-wordpress'
+export const EXAMPLE_PATH = 'next-shongshoy'
 export const CMS_NAME = 'সংশয় - চিন্তার মুক্তির আন্দোলন'
 export const CMS_URL = 'https://www.shongshoy.com/'
 export const HOME_OG_IMAGE_URL =

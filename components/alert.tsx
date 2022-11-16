@@ -12,7 +12,8 @@ export default function Alert({ preview }) {
             <div id="header-text-nav-wrap" className="clearfix">
               <div id="header-left-section">
                 <div id="header-logo-image">
-                  <a href="/" className="custom-logo-link" rel="home" aria-current="page"><Image src={logo} alt="সংশয় – চিন্তার মুক্তির আন্দোলন" layout="responsive"  /></a> 
+                  <a href="/" className="custom-logo-link" rel="home" aria-current="page"><Image src={logo} alt="সংশয় – চিন্তার মুক্তির আন্দোলন"                   
+                  width={5000} /></a> 
                 </div>
                 <div id="header-text" className="screen-reader-text">
                   <h1 id="site-title">

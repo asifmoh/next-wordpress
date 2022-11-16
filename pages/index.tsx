@@ -6,6 +6,7 @@ import HeroPost from '../components/hero-post'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import Rightsidebar from '../components/rightsidebar'
+import Featured from '../components/featured'
 
 export default function Index({ allPosts: { edges }, preview }) {
   const heroPost = edges[0]?.node
@@ -17,8 +18,8 @@ export default function Index({ allPosts: { edges }, preview }) {
         <title>সংশয় - চিন্তার মুক্তির আন্দোলন</title>
       </Head>
       <Container>
-       
-      <div className="main-content-section clearfix">
+      
+      <div className="main-content-section clearfix"> <Featured />
                                                         <div id="primary">
                                                         <div id="content" className="clearfix">
 

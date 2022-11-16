@@ -17,6 +17,8 @@ module.exports = {
       'i0.wp.com',
       'www.shongshoy.com',
       'cdnjs.cloudflare.com',
+      'c0.wp.com',
     ],
   },
+ 
 }

@@ -6,11 +6,15 @@ export default function Layout({ preview, children }) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen">
+      <div>
+                <div id="page" className="hfeed site">
+                        <a className="skip-link screen-reader-text" href="#main">Skip to content</a>
         <Alert preview={preview} />
         <main>{children}</main>
-      </div>
-      <Footer />
+        
+        <Footer />
+      </div> </div>
+     
     </>
   )
 }

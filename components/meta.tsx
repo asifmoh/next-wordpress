@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import { HOME_OG_IMAGE_URL } from '../lib/constants'
 
 export default function Meta() {
   return (
@@ -34,9 +34,13 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content={`সংশয় - চিন্তার মুক্তির আন্দোলন`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <meta name="robots" content="noindex,nofollow" />
+    <link rel="canonical" href="https://www.shongshoy.com/" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
     </Head>
   )
 }
